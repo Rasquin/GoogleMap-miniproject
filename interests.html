@@ -56,7 +56,7 @@
         </div>
     </header>
     <section class="container-fluid">
-        
+
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-4 bg-color-conferences section-column">
                 <div class="row">
@@ -139,28 +139,40 @@
         </div>
     </section>
     <footer class="container-fluid">
-   	<div id="footer-details" class="row">
-			<div class="col-sm-4 ">
-				<h5 class="uppercase general-sub">About</h5>
-				<p class="inline-block">Full Stack Web developer. Skilled in everything since HTML to Heroku. The capacity for Structural and Design Thinking.</p>
-			</div>
-			<div class="col-sm-4">
-				<h5 class="uppercase general-sub">Download my CV</h5>
-				<p class="inline-block">Need a printable version of my CV? Download it here! <a href="assets/cv/monicacv.pdf" target="_blank" class="cvpdf"><i class="fa fa-download" aria-hidden="true"></i></a></p>
-			</div>
-			<div class="col-sm-4">
-				<h5 class="uppercase general-sub">My Social</h5>
-				<ul class="list-inline social-links">
-					<li class="list-inline-item"><a target="_blank" href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-					<li class="list-inline-item"><a target="_blank" href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-					<li class="list-inline-item"><a target="_blank" href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-					<li class="list-inline-item"><a target="_blank" href="#"><i class="fab fa-pinterest" aria-hidden="true"></i></a></li>
-					<li class="list-inline-item"><a target="_blank" href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-					<li class="list-inline-item"><a target="_blank" href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
-				</ul>
-			</div>
-		</div>
+        <div id="footer-details" class="row">
+            <div class="col-sm-4 ">
+                <h5 class="uppercase general-sub">About</h5>
+                <p class="inline-block">Full Stack Web developer. Skilled in everything since HTML to Heroku. The capacity for Structural and Design Thinking.</p>
+            </div>
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">Download my CV</h5>
+                <p class="inline-block">Need a printable version of my CV? Download it here! <a href="assets/cv/monicacv.pdf" target="_blank" class="cvpdf"><i class="fa fa-download" aria-hidden="true"></i></a></p>
+            </div>
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">My Social</h5>
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item"><a target="_blank" href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank" href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank" href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank" href="#"><i class="fab fa-pinterest" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank" href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a target="_blank" href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
+
+ <script type="text/javascript" src="assets/js/maps.js"></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5Ur_4fNmT1rMJtVQtAZa8s34PaVwNIx0&callback=initMap">
+        //defer--> when loading your script at the head, it defer actions to after the page is loaded
+        //async--> load your script at the same time than the html codeo fthe page
+        //Remember to change the key for u apikey
+        //check that this script render to a variable called initMap, that will be the name of the function u need to create
+    </script>
+   
+
 </body>
 
 </html>

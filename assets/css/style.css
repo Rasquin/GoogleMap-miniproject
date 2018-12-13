@@ -103,19 +103,22 @@ header {
 
 
 /*---------------------------------colors*/
+
 .ui-menu-color-home {
     background-color: #1E90FF;
 }
+
 .bg-color-personal-info {
-    background-color:  #b3d9ff;
+    background-color: #b3d9ff;
 }
 
 
 .ui-menu-color-resume {
     background-color: #85ddfa;
 }
-.bg-color-work-history{
-    background-color:  #b6eafc;
+
+.bg-color-work-history {
+    background-color: #b6eafc;
 }
 
 /*---- hover color*/
@@ -128,15 +131,16 @@ header {
 .ui-menu-color-contact {
     background-color: #00CED1;
 }
-.bg-color-contact{
+
+.bg-color-contact {
     background-color: #F0FFFF;
 }
 
-.ui-menu-color-interests{
+.ui-menu-color-interests {
     background-color: #E0FFFF;
 }
 
-.ui-menu-color-github{
+.ui-menu-color-github {
     background-color: #ccccff;
 }
 
@@ -144,7 +148,7 @@ header {
     background-color: #87CEFA;
 }
 
-.bg-color-three-reasons{
+.bg-color-three-reasons {
     background-color: #F0FFFF;
 }
 
@@ -174,16 +178,18 @@ h5 {
     color: #fafafa;
 }
 
-.section-column{
+.section-column {
     padding: 0 30px 30px;
     float: none;
     display: table-cell;
 }
+
 .row-table {
     display: table;
 }
+
 .history-heading,
-.section-heading{
+.section-heading {
     font-family: "Exo", sans-serif;
     font-weight: 300;
     margin-top: 25px;
@@ -192,19 +198,20 @@ h5 {
 
 /*------------------------------------3 REASONS WHY*/
 
-.three-reasons-icon{
+.three-reasons-icon {
     font-size: 26px;
     color: #000080;
 }
 
-.three-reasons-heading{
+.three-reasons-heading {
     margin-bottom: 15px;
 }
+
 /*------------------------------------Personal Info*/
 
-.personal-info-item{
+.personal-info-item {
     margin-bottom: 20px;
-    display:block;
+    display: block;
     clear: both;
     color: #000080;
 }
@@ -215,9 +222,10 @@ h5 {
 }
 
 .personal-info-item .key p,
-.personal-info-item .value p{
+.personal-info-item .value p {
     margin: 0;
 }
+
 .personal-info-item .key {
     display: inline-block;
     width: 30%;
@@ -225,71 +233,86 @@ h5 {
     padding-top: 2px;
     vertical-align: top;
 }
-.personal-info-item .key p{
+
+.personal-info-item .key p {
     font-weight: 700;
 }
+
 .personal-info-item .value {
     display: inline-block;
     position: relative;
     width: 60%;
 }
+
 /*------------------------------------Skills*/
-.progress-section{
+
+.progress-section {
     margin: 40px 20px;
 }
-.progress{
+
+.progress {
     position: relative;
     height: 25px;
     margin-bottom: 5px;
 }
-.progress-type{
+
+.progress-type {
     position: absolute;
     left: 0px;
     font-weight: 400;
     padding: 3px 30px 2px 10px;
     color: #fafafa;
-    background-color: rgba(25,25,25,0.2)
-}
-.bg-colorbar-html{
-    background-color:#3366ff;
-}
-.bg-colorbar-css{
-    background-color:  #00bfff;
+    background-color: rgba(25, 25, 25, 0.2)
 }
 
-.bg-colorbar-javascript{
-    background-color:  #73e600;
+.bg-colorbar-html {
+    background-color: #3366ff;
 }
 
-.bg-colorbar-python{
+.bg-colorbar-css {
+    background-color: #00bfff;
+}
+
+.bg-colorbar-javascript {
+    background-color: #73e600;
+}
+
+.bg-colorbar-python {
     background-color: #00e6ac;
 }
-.bg-colorbar-sql{
+
+.bg-colorbar-sql {
     background-color: #4d88ff;
 }
+
 /*------------------------------------Work History*/
-.history-heading{
+
+.history-heading {
     color: #000080;
     margin-bottom: 50px;
 }
-.history-items{
+
+.history-items {
     margin-bottom: 30px;
 }
-.timeline-item{
+
+.timeline-item {
     padding: 4em 2em 0em 2em;
     position: relative;
     color: #000080;
     border-left: 1px solid;
 }
-.timeline-item p{
+
+.timeline-item p {
     padding: 0;
-    margin:0;
+    margin: 0;
 }
-.timeline-item::before{
+
+.timeline-item::before {
     content: attr(dates);
     position: absolute;
     left: 2.5em;
-    top:3em;
+    top: 3em;
     display: block;
     font-family: "Exo", sans-serif;
     font-weight: 500;
@@ -298,43 +321,47 @@ h5 {
     margin: 0;
 }
 
-.timeline-item::after{
+.timeline-item::after {
     width: 12px;
     height: 12px;
     display: block;
-    top:2.4em;
+    top: 2.4em;
     position: absolute;
     left: -6px;
     border-radius: 12px;
     content: '';
     background-color: #000080;
 }
+
 /*------------------------------------Contacts*/
 
-.contact-heading{
+.contact-heading {
     font-family: "Exo", sans-serif;
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 20px;
 }
 
-.center-form{
+.center-form {
     padding-top: 10px;
     margin: 0 auto;
     max-width: 70%;
 }
-.boton{
+
+.boton {
     margin-top: 15px;
     margin-bottom: 20px;
     background-color: #ccfeff;
     color: #000080;
-     transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
 }
-.boton:hover{
+
+.boton:hover {
     background-color: #00fbff;
 }
+
 /*------------------------------------FOOTER*/
 
 footer {
@@ -389,6 +416,10 @@ footer .cvpdf i:hover {
     -o-transition: all .35s ease-in-out;
 }
 
-#footer-details{
+#footer-details {
     margin: 20px;
+}
+
+#map {
+    min-height: 360px;
 }
