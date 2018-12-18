@@ -45,6 +45,9 @@ function repoInformationHTML(repos) {
 //--------------------------------------------------------GET INFORMATION FROM GITHUB( 1ST)
 function fetchGitHubInformation(event) { // here we are writing the funtion that we call on the oninput
 
+    $("#gh-user-data").html(""); //Wtih these, u will be sure that the page will show nothing when those spaces are empty
+    $("#gh-repo-data").html("");
+
     var username = $("#gh-username").val(); //remember $ means that we are using jquery
     if (!username) {
         $("#gh-user-data").html(`<h2>Please enter a GitHub username</h2>`);
@@ -74,7 +77,10 @@ function fetchGitHubInformation(event) { // here we are writing the funtion that
             if (errorResponse.status === 404) {
                 $("#gh-user-data").html(
                     `<h2>No info found for user ${username}</h2>`);
-            }
+            } else if (errorResponse.status === 403) { //403 is forbidden. You are making request each time u write a letter, and github api has a limit for that
+                var resetTime = new Date(errorResponse.getResponseHeader('X-RateLimit-Reset') * 1000);
+                $("#gh-user-data").html(`<h4>Too many requests, please wait until ${resetTime.toLocaleTimeString()}</h4>`);
+            } 
             else {
                 console.log(errorResponse);
                 $("#gh-user-data").html(
@@ -105,3 +111,6 @@ function fetchGitHubInformation(event) { // here we are writing the funtion that
             
           */
 }
+
+
+$(document).ready(fetchGitHubInformation); // because we want the page to be charget with this info when opening
